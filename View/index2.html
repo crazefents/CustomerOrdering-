@@ -1,0 +1,222 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Project3</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="header">
+		<div>
+			<div class="logo">
+				<a href="index.html"><h5>Ordering</h5></a>
+			</div>
+			<ul id="navigation">
+				<li class="active">
+					<a href="index2.html">Home</a>
+				</li>
+				<li>
+					<a href="features.php">Check Order</a>
+				</li>
+				<li>
+					<a href="news.php">Delivery</a>
+				</li>
+				<li>
+				   <a href="contact.php">Contact Us</a>
+				</li>
+				<li>	
+				     <a href="/new/index.php">Logout</a>
+				
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+	<div id="adbox">
+		<div class="clearfix">
+			<img src="images/box.png" alt="Img" height="280" width="200">
+
+			<div>
+				<h1>Place Order</h1>
+				<form action="process.php" method="post">
+  <fieldset>
+    <legend>Order</legend>
+    <div class="form-group">
+	
+	<label for="ProductName" class="col-lg-2 control-label">Product Name</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="ProductName" placeholder="Product" name="orderName" >
+		</div>
+		
+		
+      <label for="select" class="col-lg-2 control-label">Quantity</label>
+      <div class="col-lg-10">
+        <input class="form-control" id="select" name ="Quantity">
+      </div>
+     
+			<label for="CompanyName" class="col-lg-2 control-label">Company Name</label>
+      <div class="col-lg-10">
+	  
+        <input type="text" class="form-control" id="CompanyName" placeholder="CompanyName" name="CompanyName">
+		</div>
+		
+		
+		<label for="UserName" class="col-lg-2 control-label">Customer Name</label>
+      <div class="col-lg-10">
+	   <input type="text" class="form-control" id="UserName" placeholder="Customer Name" name="UserName">
+		</div>
+	  
+	   <label for="Date2" class="col-lg-2 control-label">Order Date</label>
+      <div class="col-lg-10">
+        <input type="Date" class="form-control" id="Date2" placeholder="dd/mm/yyyy" name ="Date2">
+		</div>
+		
+		 <label for="Time" class="col-lg-2 control-label">Order Time</label>
+      <div class="col-lg-10">
+        <input type="time" class="form-control" id="Time" placeholder="Time" name= "Time">
+      </div>
+	  
+       
+		
+		<label for="inputEmail" class="col-lg-2 control-label">Email</label>
+      <div class="col-lg-10">
+        <input type="Email" class="form-control" id="inputEmail" placeholder="Email" name="Email">
+	</div>
+	
+	
+      <label for="PhoneNumber" class="col-lg-2 control-label">Phone Number</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="PhoneNumber" placeholder="PhoneNumber" name= "Contact">
+      </div>
+	  
+	  </br>
+	
+		<div class="form-group">
+	
+	   <label class="center" for="info" class="col-lg-2 control-label">Delivery Info</label>
+	     <div class="col-lg-10">
+       
+      </div>
+	  </div>
+	</br>
+ 
+    <div class="form-group">
+      <label for="Date" class="col-lg-2 control-label">Date</label>
+      <div class="col-lg-10">
+        <input type="Date" class="form-control" id="Date" placeholder="dd/mm/yyyy" name ="Date">
+		</div>
+		 <label for="Time" class="col-lg-2 control-label">Arrival/Pick up Time</label>
+      <div class="col-lg-10">
+        <input type="time" class="form-control" id="Time" placeholder="Time" name= "ArrivalTime">
+      </div>
+		
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name = "Payment"id= "checkbox1" value = "Cash" > Cash
+			 <input type="checkbox" name ="Payment" id= "checkbox2" value ="Transfer"> Bank Transfer
+          </label> 
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="textArea" class="col-lg-2 control-label">Payments Details</label>
+      <div class="col-lg-10">
+        <input class="form-control"  id="textArea" name = "Details" >
+        <span class="help-block">Paid,50% ,Not Paid</span>
+      </div>
+    </div>
+	<div class="form-group">
+	
+	</div>
+    <div class="form-group">
+      <label class="col-lg-2 control-label">Mode of Delivery</label>
+      <div class="col-lg-10">
+        <div class="radio">
+          <label>
+            <input type="radio" name="Confirm" id="optionsRadios1" value="Collection" checked="">
+            Self Collection
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="Confirm" id="optionsRadios2" value="Delivery">
+            Company Delivery
+          </label>
+        </div>
+      </div>
+    </div>
+	</br>
+	<fieldset>
+	 <legend>Address</legend>
+	 <div class="form-group">
+    
+      
+         <label for="StreetNumber" class="col-lg-2 control-label">Street Number</label> 
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="StreetNumber" placeholder="Street Number" name="StreetNO">
+      </div>
+	  
+	   <label for="StreetName" class="col-lg-2 control-label">Street Name</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="StreetName" placeholder="Street Name" name="Streetname">
+      </div>
+	  
+	   <label for="Code" class="col-lg-2 control-label">Code</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="Code" placeholder="Code" name="code">
+      </div>
+	  
+	   <label for="State" class="col-lg-2 control-label">State</label>
+      <div class="col-lg-10">
+        <input type="text" class="form-control" id="State" placeholder="State" name = "state">
+      </div>
+	  
+	 
+         </div>
+		  </fieldset>
+        </div>
+ 
+
+	
+	
+	
+	
+	
+	
+    
+    
+    <div class="form-group">
+      <div class="col-lg-10 col-lg-offset-2">
+        <button type="reset" class="btn btn-default">Cancel</button>
+        <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+	
+	
+	
+		
+ </fieldset>
+</form>
+<h3><?php include "notification.php"?></h3>
+			</div>
+		</div>
+	</div>
+	<div id="contents">
+		<div id="tagline" class="clearfix">
+			
+		</div>
+	</div>
+	<div id="footer">
+		<div class="clearfix">
+			<div id="connect">
+				<a href="http:www.facebook.com" target="_blank" class="facebook"></a><a href="http:www.googleplus.com target="_blank" class="googleplus"></a><a href="http:www.twitter.com" target="_blank" class="twitter"></a><a href="http:www.tumbler.com" target="_blank" class="tumbler"></a>
+			</div>
+			<p>
+				© 2017 Group16. All Rights Reserved.
+			</p>
+			
+		</div>
+	
+</body>
+</html>
